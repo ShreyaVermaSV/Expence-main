@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+    font-family: 'Roboto';
+    src: url(../public/fonts/Roboto-Regular.ttf);
+
+}
+
+body{
+    /* @apply bg-custom-50 */
+    @apply bg-quaternary; 
+}
+
+@layer components {
+    .loader {
+      @apply w-16 h-16 border-4 border-t-4 border-gray-200 rounded-full animate-spin;
+      border-top-color: black; /* Customize the color of the loader */
+    }
+  }
+  
+  
